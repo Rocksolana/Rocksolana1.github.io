@@ -34,6 +34,8 @@ body {
 }
 .col-md-6 {
     width: 50%;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 .col-md-9 {
     width: 75%;
@@ -45,6 +47,7 @@ body {
 .logo {
     margin-top: 7px;
 }
+
 .menu {
     padding-left: 20px;
     padding-right: 30px;
@@ -75,8 +78,6 @@ body {
     top: 17px;
     left: 110px;
     color: #2c71b8; 
-   
-    
 }
 .menu > li > a:hover {
     color: white;
@@ -85,8 +86,7 @@ body {
 }
 .fa:hover {
     color: white;
-    
-      
+         
 }
 .submenu > li > a:hover {
     color: #2c71b8;
