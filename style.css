@@ -70,10 +70,23 @@ body {
     text-align: center;
     line-height: 50px;
 }
+.fa {
+    position: absolute;
+    top: 17px;
+    left: 110px;
+    color: #2c71b8; 
+   
+    
+}
 .menu > li > a:hover {
     color: white;
-    background-color: #2c71b8;
-    content: '\2713';
+    background-color: #2c71b8;  
+     
+}
+.fa:hover {
+    color: white;
+    
+      
 }
 .submenu > li > a:hover {
     color: #2c71b8;
