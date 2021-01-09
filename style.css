@@ -79,8 +79,7 @@ body {
 .fa > products {
     position: absolute;
     right: 50px;
-    top: 10px;
-     
+    top: 10px; 
 }
 .menu > li > a:hover {
     color: white;
@@ -278,11 +277,9 @@ li:hover .submenu-list  {
     background-color:white;
 }
 
-    
 
-/*
 .block1 {
-    border: 1px solid white;
+   border: 1px solid white;
    padding-left: -15px;
 }
 
@@ -294,17 +291,35 @@ li:hover .submenu-list  {
     padding-top: 40px;   
 }
 
+.icon2 {
+    background-color: rgba(255, 255, 255, 0.75);
+    background-repeat: no-repeat; 
+    text-align: center;
+    height: 180px;
+    padding-top: 40px;   
+}
+.icon3 {
+    background-color: rgba(255, 255, 255, 0.75);
+    background-repeat: no-repeat; 
+    text-align: center;
+    height: 180px;
+    padding-top: 40px;   
+}
 .description {
     color: white;
-
+    padding: 15px;
 }
-.block2 {
-    border: 1px solid white;
+h2 {
+    font-size: 30px;
+    font-weight: 700;
     
-
 }
-.block3 {
-    border: 1px solid white;
-    
-
+p{
+    font-size: 21px;
+    font-weight: 300;
+}
+.text {
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: bold;
 }
