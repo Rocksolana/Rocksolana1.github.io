@@ -204,40 +204,57 @@ input:focus {
 }
 .hr-line {
     border-top: 1px solid rgba(255, 255, 255, 0.75);
+    padding: 0;
+    margin: 0;
 }
 .sidebar {
-    margin-top: -8px;
     border-right: 1px solid rgba(255, 255, 255, 0.75);
     background-color:rgba(255, 255, 255, 0.25);
-}
-label {
     color:white;
+    padding-left: 30px;
+    padding-top: 30px;
     font-size: 21px;
-    font-weight: 300;;
+    font-weight: 300;     
 }
-input[type=checkbox] + label{
-   display: block;
-   margin: 20px;
-   cursor: pointer;
 
+.device_type{
+    padding-bottom: 40px;
 }
-input[type=checkbox] {
+
+input[type="checkbox"] {
     display: none;
 }
-input[type=checkbox] + label:before {
-        content: '';
-        border: 1px solid white;
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        margin-right: 15px;
-        margin-left: 30px;
-        vertical-align: bottom;
-        color: transparent;
+.option {
+    display:block;
+    margin-bottom: 25px;  
 }
-input[type=checkbox] + label:before{
+
+.sidebar_text {
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+label:before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border:1px solid white; 
+    vertical-align: middle; 
+    margin-right: 10px;
+    transition: 0.2s;
+}
+input[type="checkbox"]:checked + label:before{
     background-color: white;
-    
+}
+#more_option {
+    margin-top:-15px ;
+}
+#submit{
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 .breadcrumb > li {
@@ -274,7 +291,7 @@ ul.breadcrumb li+li:before {
     border: 1px solid white;
     background-color: #2c71b8;
     color: white;
-    z-index: 10;
+    
 }
 .menu-list > li > a {
     text-decoration: none;
@@ -291,9 +308,11 @@ ul.breadcrumb li+li:before {
     width: 270px;
     background-color: #2c71b8; 
     position: absolute;
+    z-index: 10;
 }
 .submenu-list > ul{
-    padding-top: 20px;  
+    padding-top: 20px; 
+     
 }
 .submenu-list > li {
     list-style:none;
@@ -322,7 +341,7 @@ li:hover .submenu-list  {
     background-color:white;
 }
 
-.block1 {
+.product {
    border: 1px solid white;
    margin-bottom: 30px;
    
