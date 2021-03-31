@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="style.css">
 
 
@@ -74,11 +76,8 @@
                         </div>
                         <div class="col-md-3">
                             <div class="card">
-                                <div class="products-count">4
-
-                                </div>
+                                <div class="products-count" id="products-count">0 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -87,9 +86,18 @@
     </header>
 
     <section>
-
-        <div class="slider">Slider
-
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="slider-block">
+                            <div>Slider 1</div>
+                            <div>Slider 2</div>
+                            <div>Slider 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
@@ -101,40 +109,40 @@
                 <div class="col-md-3">
                     <div class="sidebar">
                         <p class="sidebar_text"> Device type </p>
-                       <form>
-                           <div class="device_type">
-                        <input type="checkbox" id="type">
-                        <label for="type" class="option">Taptop</label>
-                        <input type="checkbox" id="type2">
-                        <label for="type2" class="option">Tablet</label>
-                           </div>
-                        <p class="sidebar_text">Color</p>
-                        <div class="device_type">
-                        <input type="checkbox" id="color">
-                        <label for="color" class="option">Black</label>
-                        <input type="checkbox" id="color2">
-                        <label for="color2" class="option">Red</label>
-                        <input type="checkbox" id="color3">
-                        <label for="color3" class="option">Green</label>
-                        <input type="checkbox" id="color4">
-                        <label for="color4" class="option">Blue</label>
-                        <input type="checkbox" id="color5">
-                        <label for="color5" class="option">Orange</label>
-                           </div>
-                        <p class="sidebar_text">Ram</p>
-                        <input type="checkbox" id="Ram">
-                        <label for="Ram" class="option">1GB</label>
-                        <input type="checkbox" id="Ram1">
-                        <label for="Ram1" class="option">2GB</label>
-                        <input type="checkbox" id="Ram2">
-                        <label for="Ram2" class="option">4GB</label>
-                        <input type="checkbox" id="Ram3">
-                        <label for="Ram3" class="option">6GB</label>
-                        <input type="checkbox" id="Ram4">
-                        <label for="Ram4"class="option">8GB</label>
-                        <p class="text-description" id="more_option" >Show more option...</p> 
-                    <button class="btn-details" id="submit"> Submit </button>   
-                </form>
+                        <form>
+                            <div class="device_type">
+                                <input type="checkbox" id="type">
+                                <label for="type" class="option">Taptop</label>
+                                <input type="checkbox" id="type2">
+                                <label for="type2" class="option">Tablet</label>
+                            </div>
+                            <p class="sidebar_text">Color</p>
+                            <div class="device_type">
+                                <input type="checkbox" id="color">
+                                <label for="color" class="option">Black</label>
+                                <input type="checkbox" id="color2">
+                                <label for="color2" class="option">Red</label>
+                                <input type="checkbox" id="color3">
+                                <label for="color3" class="option">Green</label>
+                                <input type="checkbox" id="color4">
+                                <label for="color4" class="option">Blue</label>
+                                <input type="checkbox" id="color5">
+                                <label for="color5" class="option">Orange</label>
+                            </div>
+                            <p class="sidebar_text">Ram</p>
+                            <input type="checkbox" id="Ram">
+                            <label for="Ram" class="option">1GB</label>
+                            <input type="checkbox" id="Ram1">
+                            <label for="Ram1" class="option">2GB</label>
+                            <input type="checkbox" id="Ram2">
+                            <label for="Ram2" class="option">4GB</label>
+                            <input type="checkbox" id="Ram3">
+                            <label for="Ram3" class="option">6GB</label>
+                            <input type="checkbox" id="Ram4">
+                            <label for="Ram4" class="option">8GB</label>
+                            <p class="text-description" id="more_option">Show more option...</p>
+                            <button class="btn-details" id="submit"> Submit </button>
+                        </form>
                     </div>
                 </div>
 
@@ -142,312 +150,346 @@
                     <ul class="breadcrumb">
                         <li><a href="#">Home page</a></li>
                         <li><a href="#">Products</a></li>
-                        <li><a href="#">Laptops and Tablets</a></li> 
-                      </ul>
+                        <li><a href="#">Laptops and Tablets</a></li>
+                    </ul>
                     <div class="main-menu">
                         <div class="row">
-                        <div class="col-md-8">
-                            <p class="title"> Laptops and Tablets </p>
+                            <div class="col-md-8">
+                                <p class="title"> Laptops and Tablets </p>
+                            </div>
+                            <div class="col-md-4">
+                                <nav>
+                                    <ul class="menu-list">
+                                        <li class="sort"><a href="#">sort by price </a>
+                                            <ul class="submenu-list">
+                                                <li><a href="#">sort by name </a></li>
+                                                <li><a href="#">sort by date </a></li>
+                                                <li><a hrf="#">sort by popularity </a></li>
+                                        </li>
+                                    </ul>
+                                    </ul>
+                                </nav>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <nav>
-                                <ul class="menu-list">
-                                    <li class="sort"><a href="#">sort by price </a>
-                                    <ul class="submenu-list">
-                                    <li><a href="#">sort by name </a></li>
-                                    <li><a href="#">sort by date </a></li>
-                                    <li><a hrf="#">sort by popularity </a></li>
-                                </li>
-                                </ul>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
                     </div>
                     <div class="main-content">
                         <div class="row">
-                    <div class="col-md-4">
-                        <div class="product">
-                            <div class="icon1">
-                                <img src="images/monitor.png" alt="monitor">
-                                <div class="choise1"> </div>
-                                <div class="choise2"> </div>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <div class="icon1">
+                                        <img src="images/monitor.png" alt="monitor">
+                                        <div class="choise1"> </div>
+                                        <div class="choise2"> </div>
+                                    </div>
+                                    <div class="description">
+                                        <h2> #1 Device name </h2>
+                                        <p class="text-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <p><span class="text"> Type: </span> Laptop </p>
+                                        <p><span class="text">Screen size: </span> 7 inches </p>
+                                        <p><span class="text"> Ram: </span> 1 GB </p>
+                                    </div>
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1">
+                                        <button class="increment-button">+</button>
+                                    </div>
+                                    <div class="price"> &#36; 599 <span class="cent"> 25</span>
+                                    </div>
+                                    <div class="btn">
+                                        <button class="btn-details"> More Details </button>
+                                        <button class="btn-add-to-cart"> Add to cart
+                                            <div class="white-cart"> </div>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="description">
-                                <h2> #1 Device name </h2>
-                                <p class="text-description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                </p>
-                                <p><span class="text"> Type: </span>  Laptop </p>
-                                <p><span class="text">Screen size: </span> 7 inches </p>
-                                <p><span class="text"> Ram: </span> 1 GB </p>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <div class="icon1">
+                                        <img src="images/PC.png" alt="monitor">
+                                        <div class="choise1"> </div>
+                                        <div class="choise2"> </div>
+                                    </div>
+                                    <div class="description">
+                                        <h2> #2 Device name </h2>
+                                        <p class="text-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <p><span class="text"> Type: </span> Laptop </p>
+                                        <p><span class="text">Screen size: </span> 7 inches </p>
+                                        <p><span class="text"> Ram: </span> 1 GB </p>
+                                    </div>
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1">
+                                        <button class="increment-button">+</button>
+                                    </div>
+                                    <div class="price"> &#36; 1250 <span class="cent"> 99</span>
+                                    </div>
+                                    <div class="btn">
+                                        <button class="btn-details"> More Details </button>
+                                        <button class="btn-add-to-cart"> Add to cart
+                                            <div class="white-cart"> </div>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="price"> &#36; 599 <span class="cent"> 25</span> 
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <div class="icon1">
+                                        <img src="images/clock.png" alt="monitor">
+                                        <div class="choise1"> </div>
+                                        <div class="choise2"> </div>
+                                    </div>
+                                    <div class="description">
+                                        <h2> #3 Device name </h2>
+                                        <p class="text-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <p><span class="text"> Type: </span> Laptop </p>
+                                        <p><span class="text">Screen size: </span> 7 inches </p>
+                                        <p><span class="text"> Ram: </span> 1 GB </p>
+                                    </div>
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1">
+                                        <button class="increment-button">+</button>
+                                    </div>
+                                    <div class="price"> &#36; 399 <span class="cent"> 50</span>
+                                    </div>
+                                    <div class="btn">
+                                        <button class="btn-details"> More Details </button>
+                                        <button class="btn-add-to-cart"> Add to cart
+                                            <div class="white-cart"> </div>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="btn">
-                              <button class="btn-details"> More Details </button>
-                              <button class="btn-add-to-cart">  Add to cart 
-                                <div class="white-cart">  </div>
-                              </button>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <div class="icon1">
+                                        <img src="images/laptop.png" alt="monitor">
+                                        <div class="choise1"> </div>
+                                        <div class="choise2"> </div>
+                                    </div>
+                                    <div class="description">
+                                        <h2> #1 Device name </h2>
+                                        <p class="text-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <p><span class="text"> Type: </span> Laptop </p>
+                                        <p><span class="text">Screen size: </span> 7 inches </p>
+                                        <p><span class="text"> Ram: </span> 1 GB </p>
+                                    </div>
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1">
+                                        <button class="increment-button">+</button>
+                                    </div>
+                                    <div class="price"> &#36; 599 <span class="cent"> 25</span>
+                                    </div>
+                                    <div class="btn">
+                                        <button class="btn-details"> More Details </button>
+                                        <button class="btn-add-to-cart"> Add to cart
+                                            <div class="white-cart"> </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <div class="icon1">
+                                        <img src="images/MP3.png" alt="monitor">
+                                        <div class="choise1"> </div>
+                                        <div class="choise2"> </div>
+                                    </div>
+                                    <div class="description">
+                                        <h2> #2 Device name </h2>
+                                        <p class="text-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <p><span class="text"> Type: </span> Laptop </p>
+                                        <p><span class="text">Screen size: </span> 7 inches </p>
+                                        <p><span class="text"> Ram: </span> 1 GB </p>
+                                    </div>
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1">
+                                        <button class="increment-button">+</button>
+                                    </div>
+                                    <div class="price"> &#36; 599 <span class="cent"> 55</span>
+                                    </div>
+                                    <div class="btn">
+                                        <button class="btn-details"> More Details </button>
+                                        <button class="btn-add-to-cart"> Add to cart
+                                            <div class="white-cart"> </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <div class="icon1">
+                                        <img src="images/smart phone.png" alt="monitor">
+                                        <div class="choise1"> </div>
+                                        <div class="choise2"> </div>
+                                    </div>
+                                    <div class="description">
+                                        <h2> #3 Device name </h2>
+                                        <p class="text-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <p><span class="text"> Type: </span> Laptop </p>
+                                        <p><span class="text">Screen size: </span> 7 inches </p>
+                                        <p><span class="text"> Ram: </span> 1 GB </p>
+                                    </div>
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1">
+                                        <button class="increment-button">+</button>
+                                    </div>
+                                    <div class="price"> &#36; 599 <span class="cent"> 55</span>
+                                    </div>
+                                    <div class="btn">
+                                        <button class="btn-details"> More Details </button>
+                                        <button class="btn-add-to-cart"> Add to cart
+                                            <div class="white-cart"> </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <div class="icon1">
+                                        <img src="images/mobile.png" alt="monitor">
+                                        <div class="choise1"> </div>
+                                        <div class="choise2"> </div>
+                                    </div>
+                                    <div class="description">
+                                        <h2> #1 Device name </h2>
+                                        <p class="text-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <p><span class="text"> Type: </span> Laptop </p>
+                                        <p><span class="text">Screen size: </span> 7 inches </p>
+                                        <p><span class="text"> Ram: </span> 1 GB </p>
+                                    </div>
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1">
+                                        <button class="increment-button">+</button>
+                                    </div>
+                                    <div class="price"> &#36; 599 <span class="cent"> 55</span>
+                                    </div>
+                                    <div class="btn">
+                                        <button class="btn-details"> More Details </button>
+                                        <button class="btn-add-to-cart"> Add to cart
+                                            <div class="white-cart"> </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <div class="icon1">
+                                        <img src="images/PC.png" alt="monitor">
+                                        <div class="choise1"> </div>
+                                        <div class="choise2"> </div>
+                                    </div>
+                                    <div class="description">
+                                        <h2> #2 Device name </h2>
+                                        <p class="text-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <p><span class="text"> Type: </span> Laptop </p>
+                                        <p><span class="text">Screen size: </span> 7 inches </p>
+                                        <p><span class="text"> Ram: </span> 1 GB </p>
+                                    </div>
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1">
+                                        <button class="increment-button">+</button>
+                                    </div>
+                                    <div class="price"> &#36; 599 <span class="cent"> 55</span>
+                                    </div>
+                                    <div class="btn">
+                                        <button class="btn-details"> More Details </button>
+                                        <button class="btn-add-to-cart"> Add to cart
+                                            <div class="white-cart"> </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product">
+                                    <div class="icon1">
+                                        <img src="images/clock.png" alt="monitor">
+                                        <div class="choise1"> </div>
+                                        <div class="choise2"> </div>
+                                    </div>
+                                    <div class="description">
+                                        <h2> #3 Device name </h2>
+                                        <p class="text-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <p><span class="text"> Type: </span> Laptop </p>
+                                        <p><span class="text">Screen size: </span> 7 inches </p>
+                                        <p><span class="text"> Ram: </span> 1 GB </p>
+                                    </div>
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1">
+                                        <button class="increment-button">+</button>
+                                    </div>
+                                    <div class="price"> &#36; 599 <span class="cent"> 55</span>
+                                    </div>
+                                    <div class="btn">
+                                        <button class="btn-details"> More Details </button>
+                                        <button class="btn-add-to-cart"> Add to cart
+                                            <div class="white-cart"> </div>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product">
-
-                            <div class="icon1">
-                                <img src="images/PC.png" alt="monitor">
-                                <div class="choise1"> </div>
-                                <div class="choise2"> </div>
-                            </div>
-
-                            <div class="description">
-                                <h2> #2 Device name </h2>
-                                <p class="text-description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                </p>
-                                <p><span class="text"> Type: </span>  Laptop </p>
-                                <p><span class="text">Screen size: </span> 7 inches </p>
-                                <p><span class="text"> Ram: </span> 1 GB </p>
-                             
-                            </div>
-                            <div class="price"> &#36; 1250 <span class="cent"> 99</span> 
-                            </div>
-                            <div class="btn">
-                                <button class="btn-details"> More Details </button>
-                                <button class="btn-add-to-cart">  Add to cart 
-                                  <div class="white-cart">  </div>
-                                </button>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="product">
-
-                            <div class="icon1">
-                                <img src="images/clock.png" alt="monitor">
-                            
-                                <div class="choise1"> </div>
-                                <div class="choise2"> </div>
-                            </div>
-
-                            <div class="description">
-                                <h2> #3 Device name </h2>
-                                <p class="text-description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                </p>
-                                <p><span class="text"> Type: </span>  Laptop </p>
-                                <p><span class="text">Screen size: </span> 7 inches </p>
-                                <p><span class="text"> Ram: </span> 1 GB </p>
-                             
-                            </div>
-                            <div class="price"> &#36; 399 <span class="cent"> 50</span> 
-                            </div>
-                            <div class="btn">
-                                <button class="btn-details"> More Details </button>
-                                <button class="btn-add-to-cart">  Add to cart 
-                                  <div class="white-cart">  </div>
-                                </button>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="product">
-
-                            <div class="icon1">
-                                <img src="images/laptop.png" alt="monitor">
-                            
-                                <div class="choise1"> </div>
-                                <div class="choise2"> </div>
-                            </div>
-
-                            <div class="description">
-                                <h2> #1 Device name </h2>
-                                <p class="text-description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                </p>
-                                <p><span class="text"> Type: </span>  Laptop </p>
-                                <p><span class="text">Screen size: </span> 7 inches </p>
-                                <p><span class="text"> Ram: </span> 1 GB </p>
-                             
-                            </div>
-                            <div class="price"> &#36; 599 <span class="cent"> 25</span> 
-                            </div>
-                            <div class="btn">
-                                <button class="btn-details"> More Details </button>
-                                <button class="btn-add-to-cart">  Add to cart 
-                                  <div class="white-cart">  </div>
-                                </button>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="product">
-
-                            <div class="icon1">
-                                <img src="images/MP3.png" alt="monitor">
-                            
-                                <div class="choise1"> </div>
-                                <div class="choise2"> </div>
-                            </div>
-
-                            <div class="description">
-                                <h2> #2 Device name </h2>
-                                <p class="text-description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                </p>
-                                <p><span class="text"> Type: </span>  Laptop </p>
-                                <p><span class="text">Screen size: </span> 7 inches </p>
-                                <p><span class="text"> Ram: </span> 1 GB </p>
-                             
-                            </div>
-                            <div class="price"> &#36; 599 <span class="cent"> 55</span> 
-                            </div>
-                            <div class="btn">
-                                <button class="btn-details"> More Details </button>
-                                <button class="btn-add-to-cart">  Add to cart 
-                                  <div class="white-cart">  </div>
-                                </button>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="product">
-
-                            <div class="icon1">
-                                <img src="images/smart phone.png" alt="monitor">
-                            
-                                <div class="choise1"> </div>
-                                <div class="choise2"> </div>
-                            </div>
-
-                            <div class="description">
-                                <h2> #3 Device name </h2>
-                                <p class="text-description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                </p>
-                                <p><span class="text"> Type: </span>  Laptop </p>
-                                <p><span class="text">Screen size: </span> 7 inches </p>
-                                <p><span class="text"> Ram: </span> 1 GB </p>
-                             
-                            </div>
-                            <div class="price"> &#36; 599 <span class="cent"> 55</span> 
-                            </div>
-                            <div class="btn">
-                                <button class="btn-details"> More Details </button>
-                                <button class="btn-add-to-cart">  Add to cart 
-                                  <div class="white-cart">  </div>
-                                </button>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="product">
-
-                            <div class="icon1">
-                                <img src="images/mobile.png" alt="monitor">
-                            
-                                <div class="choise1"> </div>
-                                <div class="choise2"> </div>
-                            </div>
-
-                            <div class="description">
-                                <h2> #1 Device name </h2>
-                                <p class="text-description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                </p>
-                                <p><span class="text"> Type: </span>  Laptop </p>
-                                <p><span class="text">Screen size: </span> 7 inches </p>
-                                <p><span class="text"> Ram: </span> 1 GB </p>
-                             
-                            </div>
-                            <div class="price"> &#36; 599 <span class="cent"> 55</span> 
-                            </div>
-                            <div class="btn">
-                                <button class="btn-details"> More Details </button>
-                                <button class="btn-add-to-cart">  Add to cart 
-                                  <div class="white-cart">  </div>
-                                </button>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="product">
-
-                            <div class="icon1">
-                                <img src="images/PC.png" alt="monitor">
-                            
-                                <div class="choise1"> </div>
-                                <div class="choise2"> </div>
-                            </div>
-
-                            <div class="description">
-                                <h2> #2 Device name </h2>
-                                <p class="text-description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                </p>
-                                <p><span class="text"> Type: </span>  Laptop </p>
-                                <p><span class="text">Screen size: </span> 7 inches </p>
-                                <p><span class="text"> Ram: </span> 1 GB </p>
-                             
-                            </div>
-                            <div class="price"> &#36; 599 <span class="cent"> 55</span> 
-                            </div>
-                            <div class="btn">
-                                <button class="btn-details"> More Details </button>
-                                <button class="btn-add-to-cart">  Add to cart 
-                                  <div class="white-cart">  </div>
-                                </button>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="product">
-
-                            <div class="icon1">
-                                <img src="images/clock.png" alt="monitor">
-                            
-                                <div class="choise1"> </div>
-                                <div class="choise2"> </div>
-                            </div>
-
-                            <div class="description">
-                                <h2> #3 Device name </h2>
-                                <p class="text-description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                </p>
-                                <p><span class="text"> Type: </span>  Laptop </p>
-                                <p><span class="text">Screen size: </span> 7 inches </p>
-                                <p><span class="text"> Ram: </span> 1 GB </p>
-                             
-                            </div>
-                            <div class="price"> &#36; 599 <span class="cent"> 55</span> 
-                            </div>
-                            <div class="btn">
-                                <button class="btn-details"> More Details </button>
-                                <button class="btn-add-to-cart">  Add to cart 
-                                  <div class="white-cart">  </div>
-                                </button>
-                              </div>
-                        </div>
-                    </div>
-                    </div>
-                    </div>
-
-                        </div>
-                    </div>
-
                 </div>
             </div>
+
+        </div>
+        </div>
         </div>
     </section>
     <footer class="footer">
         <div class="container">
-              <p class="credits"> &#169; Copiright 2017 </p>
+            <p class="credits"> &#169; Copiright 2017 </p>
 
         </div>
     </footer>
+    <!--modal-->
+    <div class="modal">
+        <div class="modal-block">
+            <form>
+                <div class="close-btn">X</div>
+                <h3 class="modal_text">Please call for more details</h3>
+                <div class="form-field">
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="form-field">
+                    <input type="text" placeholder="Your phone">
+                </div>
+                <button class="modal_text">Please Call</button>
 
+            </form>
+        </div>
+    </div>
+    
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
